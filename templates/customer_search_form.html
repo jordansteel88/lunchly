@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Search Customers {% endblock %}
+
+{% block content %}
+
+<form action="/search" method="POST">
+  <h1>Find a Customer</h1>
+
+  <div class="form-group">
+    <label for="query">Enter a name below: </label>
+      <input id="query"
+             class="form-control"
+             name="query">
+  </div>
+
+  <button class="btn btn-primary">Search</button>
+  <a href="/" class="btn btn-danger">Cancel</a>
+</form>
+  
+{% endblock %}
